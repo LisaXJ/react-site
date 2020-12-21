@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import {Route, HashRouter} from 'react-router-dom';
+import 'animate.css';
+
+import LandingPage from './components/pages/LandingPage';
+import Navigation from './components/navigation/Navigation';
+import MainPage from './components/pages/MainPage';
+import Sidebar from './components/navigation/Sidebar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <HashRouter basename='/'>
+                <Navigation />
+                <Sidebar />
+                
+                <Route exact path='/' render={() => <LandingPage />} />
+                <Route exact path='/main' render={() => <MainPage />} />
+            </HashRouter>
+        </div>
+    );
 }
 
 export default App;
