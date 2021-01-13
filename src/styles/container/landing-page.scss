@@ -1,5 +1,6 @@
 .container {
-    background: url('../../images/nature.jpg') no-repeat center center fixed; 
+    // background: url('../../images/nature.jpg') no-repeat center center fixed; 
+    background-color: $dark-navy;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -11,10 +12,13 @@
     left: 10vw;
     top: 10vh;
 
+    z-index: -1;
+}
+
+.container-items {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -1;
 }
 
 .lp_text-container {

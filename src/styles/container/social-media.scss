@@ -1,12 +1,12 @@
 //variables
-$basic-dark-color: #212121;
+$basic-dark-color: $dark-navy;
 $basic-light-color: #fff;
 $border-radius: 50%;
 $font-size: 25px;
 
 .effect {
-  width: 100%;
-  padding: 25vh 0px 0px 0px;
+  padding-top: 25vh;
+  max-width: 10vw;
 //   background-color: $basic-dark-color;
   
   h2 {
@@ -32,7 +32,6 @@ $font-size: 25px;
   }
   
   &:nth-child(2n) {
-    
      a {
       color: $basic-dark-color;
       border-color: $basic-dark-color;
@@ -91,10 +90,8 @@ $font-size: 25px;
 
 /* varrius effect */
 .effect.varrius {
-    display: flex;
-  
   a {
-    transition: all 0.2s linear 0s;
+    transition: all 0.3s linear 0s;
     
     &:after {
       content: "";
@@ -115,7 +112,7 @@ $font-size: 25px;
       
       &:after {
         top: 5%;
-        transition: all 0.2s linear 0s;
+        transition: all 0.3s linear 0s;
       }
     }
   }
