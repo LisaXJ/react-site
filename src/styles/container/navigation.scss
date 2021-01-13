@@ -17,7 +17,7 @@ a, a:hover, a:active, a:visited, a:link {
 
 .nav-text {
     display: inline-block;
-    color: black;
+    color: $dark-navy;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     font-size: 0.8rem;
     font-weight: 800;
@@ -40,5 +40,5 @@ a, a:hover, a:active, a:visited, a:link {
 
 .nav-text:hover:after {
     width: 100%;
-    background: black;
+    background: $dark-navy;
 }
